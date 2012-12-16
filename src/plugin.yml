@@ -1,0 +1,15 @@
+name: ServerNotify
+main: me.gomeow.servernotify.servernotify
+author: gomeow
+version: 1.0
+description: A new broadcasting plugin that gives a lot of functionality.
+
+permissions:
+  servernotify.*:
+    description: Gives all server notify permissions.
+    default: op
+    children:
+      servernotify.admin: true
+  servernotify.admin:
+    description: Players who have this permission will go into the admin list shown in chat.
+    

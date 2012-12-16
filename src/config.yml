@@ -1,0 +1,39 @@
+############################
+#           CONFIG         #
+############################
+#
+#The interval you want the message to be broadcasted, in seconds.
+Interval: 10
+#
+#Here is the message config.
+#To add a new line, hit enter, then 2 spaces, a number, then a colon,
+#then out your message in single quotes.
+#
+#Things you can put in your message:
+#
+#  %player% - A list of online players.
+#  %ops% - A list of OPs online.
+#  %onlineamount% - Would give something like this: 11/25
+#  %admins% - A list of people with the permission servernotify.admin
+#You can't have random quote marks in a yaml file, so do this when you want quotes:
+#  %quote% - Single quote
+#  %doublequote% - Double quote
+#  This plugin can also handle color codes with the & character.
+#
+#The number of the message doesn't matter, so it could be out of order,
+#but still display in the defined order.
+#
+#Example:
+Messages:
+  1: '&a======&4Gomeow%quote%s Server&a======'
+  2: '&dThere are &c%onlineamount% &dplayers online!'
+  3: '&aPlayers: &9%players%'
+  4: '&eOPs Online: &b%ops%'
+  5: '&3Admins Online: &2%admins%'
+#
+#Now you need to define the messages to be shown when no players
+#of a certain group are online.
+#
+No-Players-Online-Message: 'There are no players online right now.'
+No-Ops-Online-Message: 'There are no ops online right now.'
+No-Admins-Online-Message: 'There are no admins online right now.'
